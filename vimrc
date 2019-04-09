@@ -3,6 +3,7 @@ syntax on
 filetype plugin indent on
 set number
 set relativenumber
+<<<<<<< HEAD
 set splitright
 :color desert
 
@@ -23,10 +24,23 @@ autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isT
 "open NERDTree on RHS.
 let g:NERDTreeWinPos = "right"
 
+=======
+:color desert
+
+""NERDTree config
+
+"open NERDTree on RHS.
+let g:NERDTreeWinPos = "right"
+
+"close NERDTree if it's the last buffer
+autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
+
+>>>>>>> 194b93cc749417b89f518da0863d114e4d65c90d
 "Airline config
 "set minimilist Airline theme
 let g:airline_theme='minimalist'
 
+<<<<<<< HEAD
 "If working in windows subsystem linux or in Putty, disable the irritating beep of console
 "NOTE: This also requires that '"set bell-style none" to be set in
 "/etc/inputrc
@@ -34,3 +48,9 @@ let g:airline_theme='minimalist'
 set visualbell
 "this will turn off the visual blips for the visualbell
 set t_vb=
+=======
+"If working in windows subsystem linux, disable the irritating beep of console
+"NOTE: This also requires that '"set bell-style none" to be set in
+"/etc/inputrc
+set visualbell
+>>>>>>> 194b93cc749417b89f518da0863d114e4d65c90d
