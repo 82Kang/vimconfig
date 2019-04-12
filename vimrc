@@ -34,6 +34,7 @@ let g:airline_theme='minimalist'
 "/etc/inputrc
 "this will change the feedback from console beep to visual blips
 set visualbell
+
 "this will turn off the visual blips for the visualbell
 set t_vb=
 
