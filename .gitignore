@@ -1,5 +1,5 @@
 # This will ignore everything
-*
+#*
 # We will tell not to ignore README, vimrc and .gitignore
 !README
 !vimrc
