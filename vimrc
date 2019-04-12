@@ -39,6 +39,7 @@ set visualbell
 set t_vb=
 
 "TODO:
+"
 "2. tab and space settings.
 "3. marker setting for the global environment. How many of them we can have?
 "3. understand syntastic.
