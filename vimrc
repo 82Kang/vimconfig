@@ -56,3 +56,6 @@ set expandtab
 set ignorecase
 set smartcase
 
+"place a purple colored cursor on the 81th coloum, if there is a text in it.
+highlight ColorColumn ctermbg=magenta
+call matchadd('ColorColumn', '\%81v', 100)
