@@ -59,3 +59,12 @@ set smartcase
 "place a purple colored cursor on the 81th coloum, if there is a text in it.
 highlight ColorColumn ctermbg=magenta
 call matchadd('ColorColumn', '\%81v', 100)
+
+"Pane navigation
+"
+"Use Ctrl hjkl to move b/w panes
+
+nnoremap <C-J> <C-W><C-J>
+nnoremap <C-K> <C-W><C-K>
+nnoremap <C-L> <C-W><C-L>
+nnoremap <C-H> <C-W><C-H>
