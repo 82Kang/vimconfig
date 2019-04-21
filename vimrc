@@ -26,8 +26,8 @@ autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isT
 let g:NERDTreeWinPos = "right"
 
 "Airline config
-"set minimilist Airline theme
-let g:airline_theme='minimalist'
+"set Airline theme
+let g:airline_theme='solarized_flood'
 
 "If working in windows subsystem linux or in Putty, disable the irritating beep of console
 "NOTE: This also requires that '"set bell-style none" to be set in
@@ -44,3 +44,15 @@ set t_vb=
 "3. marker setting for the global environment. How many of them we can have?
 "3. understand syntastic.
 "
+
+"Set no tabs and tabwidth of 4 spaces
+set tabstop=4
+set shiftwidth=4
+set expandtab
+
+"Searching in file
+"ignorecase
+"smartcase. NOTE: This requires setting ignorecase to work
+set ignorecase
+set smartcase
+
